@@ -1,0 +1,1021 @@
+.form__block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 20px
+}
+
+.form__image {
+    margin: 0 auto
+}
+
+.image__wrapper {
+    margin: 40px 0 35px
+}
+
+.form__wrapper {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto
+}
+
+.form__price-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin-bottom: 20px
+}
+
+.form__price {
+    font-size: 18px;
+    text-align: center
+}
+
+.form__price-title {
+    margin-bottom: 0
+}
+
+.form__price-value {
+    font-size: 30px;
+    line-height: 1.2;
+    position: relative
+}
+
+.form__price-old .form__price-value::after,.form__price-old .form__price-value::before {
+    content: "";
+    width: 110%;
+    height: 1px;
+    background-color: red;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -5%
+}
+
+.form__price-old .form__price-value::before {
+    -webkit-transform: rotate(-20deg) translateY(-50%);
+    -ms-transform: rotate(-20deg) translateY(-50%);
+    transform: rotate(-20deg) translateY(-50%)
+}
+
+.form__price-old .form__price-value::after,.form__price-old .form__price-value::before {
+    content: "";
+    width: 110%;
+    height: 1px;
+    background-color: red;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -5%
+}
+
+.form__price-old .form__price-value::after {
+    -webkit-transform: rotate(20deg) translateY(-50%);
+    -ms-transform: rotate(20deg) translateY(-50%);
+    transform: rotate(20deg) translateY(-50%)
+}
+
+.form__input {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 16px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px 15px;
+    border: 1px solid #7c7b7b;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 3px 10px -5px #000;
+    box-shadow: 0 3px 10px -5px #000;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+input:invalid {
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+.form__btn {
+    width: 100%;
+    max-width: 382px;
+    border: none;
+    background-color: red;
+    color: #fff;
+    font-size: 20px;
+    margin-left: auto;
+    font-weight: 700;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+    -webkit-box-shadow: 0 2px 5px 0 #000;
+    box-shadow: 0 2px 5px 0 #000;
+    cursor: pointer;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s
+}
+
+@media (max-width:767px) {
+    .form__block {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column
+    }
+
+    .form__image {
+        margin: 0 0 20px
+    }
+
+    .image__wrapper {
+        margin: 30px 0 25px
+    }
+}
+
+@media only screen and (min-device-width:900px) and (max-device-width:1260px) {
+    .form__wrapper {
+        width: 100%;
+        margin-right: 40px;
+        max-width: 350px;
+        margin-left: 30px
+    }
+}
+
+@media (max-width:479px) {
+    .form__input {
+        display: block;
+        margin-left: auto;
+        margin-bottom: 20px;
+        margin-right: auto;
+        font-size: 16px;
+        padding: 10px 15px;
+        border: 1px solid #7c7b7b;
+        border-radius: 10px;
+        -webkit-box-shadow: 0 3px 10px -5px #000;
+        box-shadow: 0 3px 10px -5px #000
+    }
+
+    .article__text ul {
+        padding-left: 0
+    }
+}
+
+li {
+    list-style-type: none
+}
+
+.form__btn:hover {
+    opacity: 1
+}
+
+@media (max-width:400px) {
+    .tov__name {
+        font-size: 8px!important
+    }
+}
+
+.colored__title {
+    color: #0886cb
+}
+
+.colored__title .red {
+    font-weight: 700;
+    color: red
+}
+
+.sec__footer {
+    padding: 20px 10px;
+    text-align: center
+}
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.6);
+    z-index: 99;
+    display: none;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.popup__form {
+    max-width: 340px;
+    position: relative;
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px
+}
+
+.popup__cross {
+    position: absolute;
+    top: -60px;
+    right: -30px;
+    font-size: 50px;
+    cursor: pointer;
+    color: #fff
+}
+
+.popup__title {
+    text-align: center;
+    font-weight: 200;
+    font-size: 2em;
+    margin-bottom: 20px
+}
+
+.popup__input {
+    padding: 15px;
+    border: none;
+    border: 1px solid #ddd;
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 16px
+}
+
+textarea.popup__input {
+    max-width: 100%;
+    min-width: 100%;
+    font-family: sans-serif;
+    min-height: 50px
+}
+
+.popup__btn {
+    width: 100%;
+    background: red;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 200;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+    padding: 10px
+}
+
+.popup__link {
+    color: #a12000;
+    cursor: pointer
+}
+
+@media (max-width:767px) {
+    .popup__cross {
+        position: absolute;
+        top: -60px;
+        right: 0;
+        font-size: 50px;
+        cursor: pointer;
+        color: #fff
+    }
+}
+
+
+
+.telex-app {
+    padding-bottom: 1em
+}
+
+.nuxt-progress {
+    background-color: #fff;
+    height: 2px;
+    left: 0;
+    opacity: 1;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: width .1s,opacity .4s;
+    width: 0;
+    z-index: 999999
+}
+
+.nuxt-progress.nuxt-progress-notransition {
+    transition: none
+}
+
+.nuxt-progress-failed {
+    background-color: red
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 100;
+    src: url(/_nuxt/fonts/Inter-Thin.c51873c.woff2) format("woff2"),url(/_nuxt/fonts/Inter-Thin.0f080c4.woff) format("woff")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Inter;
+    font-style: italic;
+    font-weight: 100;
+    src: url(/_nuxt/fonts/Inter-ThinItalic.ae26e5b.woff2) format("woff2"),url(/_nuxt/fonts/Inter-ThinItalic.7a27099.woff) format("woff")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 200;
+    src: url(/_nuxt/fonts/Inter-ExtraLight.c57ab80.woff2) format("woff2"),url(/_nuxt/fonts/Inter-ExtraLight.7d75935.woff) format("woff")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Inter;
+    font-style: italic;
+    font-weight: 200;
+    src: url(/_nuxt/fonts/Inter-ExtraLightItalic.3635f9d.woff2) format("woff2"),url(/_nuxt/fonts/Inter-ExtraLightItalic.65837db.woff) format("woff")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 300;
+    src: url(/_nuxt/fonts/Inter-Light.4e2e867.woff2) format("woff2"),url(/_nuxt/fonts/Inter-Light.0f0118f.woff) format("woff")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Inter;
+    font-style: italic;
+    font-weight: 300;
+    src: url(/_nuxt/fonts/Inter-LightItalic.5e1e50b.woff2) format("woff2"),url(/_nuxt/fonts/Inter-LightItalic.5c1fed5.woff) format("woff")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    src: url(/_nuxt/fonts/Inter-Regular.8070997.woff2) format("woff2"),url(/_nuxt/fonts/Inter-Regular.14d1275.woff) format("woff")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Inter;
+    font-style: italic;
+    font-weight: 400;
+    src: url(/_nuxt/fonts/Inter-Italic.dfadecc.woff2) format("woff2"),url(/_nuxt/fonts/Inter-Italic.9cbb8f0.woff) format("woff")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    src: url(/_nuxt/fonts/Inter-Medium.46d7404.woff2) format("woff2"),url(/_nuxt/fonts/Inter-Medium.5ce3e4d.woff) format("woff")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Inter;
+    font-style: italic;
+    font-weight: 500;
+    src: url(/_nuxt/fonts/Inter-MediumItalic.fe68865.woff2) format("woff2"),url(/_nuxt/fonts/Inter-MediumItalic.16f319c.woff) format("woff")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    src: url(/_nuxt/fonts/Inter-SemiBold.a553f44.woff2) format("woff2"),url(/_nuxt/fonts/Inter-SemiBold.1d5bb5c.woff) format("woff")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Inter;
+    font-style: italic;
+    font-weight: 600;
+    src: url(/_nuxt/fonts/Inter-SemiBoldItalic.ffaf7dc.woff2) format("woff2"),url(/_nuxt/fonts/Inter-SemiBoldItalic.9cfc881.woff) format("woff")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    src: url(/_nuxt/fonts/Inter-Bold.1217aae.woff2) format("woff2"),url(/_nuxt/fonts/Inter-Bold.45e58f4.woff) format("woff")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Inter;
+    font-style: italic;
+    font-weight: 700;
+    src: url(/_nuxt/fonts/Inter-BoldItalic.d7b7695.woff2) format("woff2"),url(/_nuxt/fonts/Inter-BoldItalic.3b22d00.woff) format("woff")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 800;
+    src: url(/_nuxt/fonts/Inter-ExtraBold.a0c781a.woff2) format("woff2"),url(/_nuxt/fonts/Inter-ExtraBold.45ce938.woff) format("woff")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Inter;
+    font-style: italic;
+    font-weight: 800;
+    src: url(/_nuxt/fonts/Inter-ExtraBoldItalic.d47b586.woff2) format("woff2"),url(/_nuxt/fonts/Inter-ExtraBoldItalic.027e59f.woff) format("woff")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 900;
+    src: url(/_nuxt/fonts/Inter-Black.e11ae72.woff2) format("woff2"),url(/_nuxt/fonts/Inter-Black.14a450a.woff) format("woff")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Inter;
+    font-style: italic;
+    font-weight: 900;
+    src: url(/_nuxt/fonts/Inter-BlackItalic.e78a230.woff2) format("woff2"),url(/_nuxt/fonts/Inter-BlackItalic.4bd1bed.woff) format("woff")
+}
+
+@font-face {
+    font-named-instance:"Regular";font-display: swap;
+    font-family: Inter var;
+    font-style: normal;
+    font-weight: 100 900;
+    src: url(/_nuxt/fonts/Inter-roman.var.57fa490.woff2) format("woff2")
+}
+
+@font-face {
+    font-named-instance:"Italic";font-display: swap;
+    font-family: Inter var;
+    font-style: italic;
+    font-weight: 100 900;
+    src: url(/_nuxt/fonts/Inter-italic.var.b14d906.woff2) format("woff2")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Inter var experimental;
+    font-style: oblique 0deg 10deg;
+    font-weight: 100 900;
+    src: url(/_nuxt/fonts/Inter.var.f065685.woff2) format("woff2")
+}
+
+@font-face {
+    font-display: block;
+    font-family: icomoon;
+    font-style: normal;
+    font-weight: 400;
+    src: url(/_nuxt/fonts/icomoon.307e353.eot);
+    src: url(/_nuxt/fonts/icomoon.307e353.eot#iefix) format("embedded-opentype"),url(/_nuxt/fonts/icomoon.5320bb5.ttf) format("truetype"),url(/_nuxt/fonts/icomoon.d76d889.woff) format("woff"),url(/_nuxt/img/icomoon.167a96e.svg#icomoon) format("svg")
+}
+
+[class*=" icon-"],[class^=icon-] {
+    speak: never;
+    font-feature-settings: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: icomoon!important;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: none
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Amiri;
+    font-style: normal;
+    font-weight: 400;
+    src: url(/_nuxt/fonts/Amiri-Regular.272ac4e.woff2) format("woff2"),url(/_nuxt/fonts/Amiri-Regular.99ed6ed.woff) format("woff")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Amiri;
+    font-style: italic;
+    font-weight: 400;
+    src: url(/_nuxt/fonts/Amiri-RegularItalic.8b52b90.woff2) format("woff2"),url(/_nuxt/fonts/Amiri-RegularItalic.cebf18c.woff) format("woff")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Amiri;
+    font-style: normal;
+    font-weight: 700;
+    src: url(/_nuxt/fonts/Amiri-Bold.351fe2d.woff2) format("woff2"),url(/_nuxt/fonts/Amiri-Bold.c746cec.woff) format("woff")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Amiri;
+    font-style: italic;
+    font-weight: 700;
+    src: url(/_nuxt/fonts/Amiri-BoldItalic.ef5c357.woff2) format("woff2"),url(/_nuxt/fonts/Amiri-BoldItalic.65b1036.woff) format("woff")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Space Grotesk;
+    font-style: normal;
+    font-weight: 300;
+    src: url(/_nuxt/fonts/SpaceGrotesk-Light.414fb85.woff2) format("woff2")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Space Grotesk;
+    font-style: normal;
+    font-weight: 400;
+    src: url(/_nuxt/fonts/SpaceGrotesk-Regular.e421b8e.woff2) format("woff2")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Space Grotesk;
+    font-style: normal;
+    font-weight: 500;
+    src: url(/_nuxt/fonts/SpaceGrotesk-Medium.169c94e.woff2) format("woff2")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Space Grotesk;
+    font-style: normal;
+    font-weight: 700;
+    src: url(/_nuxt/fonts/SpaceGrotesk-Bold.03f0fbb.woff2) format("woff2")
+}
+
+body {
+    --sans: "Inter",sans-serif;
+    --serif: "Amiri",serif;
+    --grotesk: "Space Grotesk",sans-serif;
+    --light: 300;
+    --regular: 400;
+    --medium: 500;
+    --semibold: 600;
+    --bold: 700;
+    --extrabold: 800;
+    --max: 900;
+    --move: translateY(-1px);
+    --default: translateY(1px);
+    --smooth: .5s ease-out;
+    --theme: background-color .3s ease-out;
+    --theme-border: border .3s ease-out;
+    --theme-text: color .3s ease-out;
+    --theme-fill: fill .3s ease-out;
+    --theme-gradient: gradient .3s ease-out;
+    --theme-all: all .3s ease-out;
+    --accent: #096;
+    --secondary: #135;
+    --white: #fff;
+    --white-medium: #f1f1f1;
+    --black: #222;
+    --black-dark: #111;
+    --yellow: #fe0;
+    --red: #f23;
+    --gray-extra-dark: #444;
+    --gray-dark: #777;
+    --gray-medium: #999;
+    --gray-mid-light: #ddd;
+    --gray-mid-light-fx: #bbd2dd;
+    --gray-mid-light-inv: #555;
+    --gray-light: #f2f2f2;
+    --gray-light-fade: linear-gradient(0deg,#222,rgba(34,34,34,.5) 60%,rgba(34,34,34,0));
+    --gray-light-fx: #e6eefe;
+    --gray-extra-light: #f9f9f9;
+    --after: #7b52c2;
+    --accent-dark: #0fb;
+    --secondary-dark: #8df;
+    --cards-dark: #333;
+    --logo-automagazin: url(/_nuxt/img/automagazin.3f2b79e.svg);
+    --logo-tarca: url(/_nuxt/img/tarca.4d6a01b.svg);
+    --logo-napirajz: url(/_nuxt/img/napirajz.7fcd09c.svg);
+    --logo-hold: url(/_nuxt/img/hold.13118b9.svg);
+    --logo-after-white: url(/_nuxt/img/after-light.859d29c.svg);
+    --logo-viral-red: url(/_nuxt/img/zacc-light.69c55cb.svg);
+    --icon-x: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbC1ydWxlPSJldmVub2RkIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbWl0ZXJsaW1pdD0iMiIgZmlsbD0iI2ZmZiI+PHBhdGggZD0iTTE0LjY0MSAyLjVoMi40NTNsLTUuMzg1IDYuMzY1TDE4IDE3LjVoLTQuOTM3bC0zLjg2NS01LjI0N0w0Ljc3MiAxNy41SDIuMzJsNS43MDUtNi44MDhMMiAyLjVoNS4wNmwzLjQ5MiA0Ljc5M0wxNC42NDEgMi41em0tLjg1OCAxMy41MDZoMS4zNkw2LjM0NSAzLjkzOUg0Ljg4NGw4Ljg5OCAxMi4wNjd6IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48L3N2Zz4=);
+    --cw-a: #244;
+    --cw-a--accent: var(--yellow);
+    --cw-b: #331d33;
+    --cw-b--accent: #8df;
+    --cw-c: #22222b;
+    --cw-c--accent: #ea7
+}
+
+.light-mode {
+    --color-accent: #096;
+    --rgb-accent: 0,153,102;
+    --color-accent-light: #0cc;
+    --color-accent-dark: #096;
+    --color-accent-inv: #0fb;
+    --color-secondary: #135;
+    --color-secondary-inv: #8df;
+    --color-scrollbar: rgba(17,51,85,.6);
+    --color-yellow: #fe0;
+    --color-red: #c00;
+    --color-outward: #18f;
+    --color-text: #333;
+    --color-text-long: #444;
+    --color-bg: #fff;
+    --color-bg-fade: linear-gradient(0deg,#fff,hsla(0,0%,100%,.5) 60%,hsla(0,0%,100%,0));
+    --color-bg-long: #f9f9f9;
+    --color-bg-inv: #222;
+    --color-gray-extra-dark: #444;
+    --color-gray-dark: #777;
+    --color-gray-medium: #999;
+    --color-gray-medium-inv: #aaa;
+    --color-gray-mid-light: #ddd;
+    --color-gray-mid-light-fx: #bbd2dd;
+    --color-gray-mid-light-inv: #555;
+    --color-gray-light: #f2f2f2;
+    --color-gray-light-fade: linear-gradient(0deg,#f2f2f2,hsla(0,0%,95%,.5) 60%,hsla(0,0%,95%,0));
+    --color-gray-light-fx: #e6eefe;
+    --color-gray-extra-light: #f9f9f9;
+    --color-general: #135;
+    --color-nav: #024;
+    --color-nav-light: #f9f9f9;
+    --color-nav-mid-light: #ddd;
+    --color-cards: #fff;
+    --color-list: #f6f6f6;
+    --color-viral: #f44;
+    --color-viral-inv: #eaa;
+    --color-viral-light: #f4f2ff;
+    --color-after: #7b52c2;
+    --color-g7: #1d1d1d;
+    --color-light: #fff;
+    --color-hold: #150f46;
+    --color-hold-accent: #cd3160;
+    --color-eszkombajn-blue: #049;
+    --color-eszkombajn-red: #e01;
+    --logo-after: url(/_nuxt/img/after-light.859d29c.svg);
+    --logo-direkt: url(/_nuxt/img/direkt-light.515a19c.svg);
+    --logo-eszkombajn: url(/_nuxt/img/eszkombajn-light.d4840ce.svg);
+    --logo-g7: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgNTAiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLW1pdGVybGltaXQ9IjIiPjxwYXRoIGQ9Ik0wIDBoMTAwdjUwSDB6IiBmaWxsPSIjMWQxZDFkIi8+PHBhdGggZD0iTTEwMCAwdjUwSDUwVjBoNTB6TTY3Ljk0MiA0MS44MjdoOS41NjNsMTAuOTU4LTI1LjE0VjguMTczSDYxLjUzOXY4LjQzOGgxNy45MzVMNjcuOTQyIDQxLjgyN3ptLTQyLjI5NSA1LjI4OUMxMi4yNDIgNDcuMTE2IDMuMzY1IDM2LjkxNCAzLjM2NSAyNWMwLTEyLjI2NyA5LjIyOS0yMi4xMTYgMjEuOTI5LTIyLjExNiA4LjkzNiAwIDE1Ljg3MyA0LjU0MSAxOS41MTcgMTEuMDI5bC03LjE3MyA0LjM2M2MtMi42NDQtNC44OTQtNi43MDEtNy40My0xMi4yODYtNy40My03LjgxOSAwLTEzLjg3NSA2LjQyOC0xMy44NzUgMTQuMTU0IDAgNy45MDMgNS45MzggMTQuMTU0IDE0LjE2OCAxNC4xNTQgNi4yMzIgMCAxMC42NDEtMy41MzggMTIuMTY5LTkuMDI0SDI0LjM1MnYtNy44NDJoMjIuMjgzdjMuMzAzYzAgMTEuNTU4LTguMjMxIDIxLjUyNS0yMC45ODkgMjEuNTI1eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==);
+    --logo-komplex: url(/_nuxt/img/komplex-light.e3a01ed.svg);
+    --logo-szepkilatas: url(/_nuxt/img/szepkilatas-light.4043c71.svg);
+    --logo-valasztasi-foldrajz: url(/_nuxt/img/valasztasi-foldrajz-light.36cf51a.svg);
+    --logo-viral: url(/_nuxt/img/zacc-light.69c55cb.svg);
+    --logo-viral-inv: url(/_nuxt/img/zacc-dark.224e2dc.svg);
+    --gfx-empty: url(/_nuxt/img/search_empty-light.57a3baa.svg);
+    --gfx-apps: url(/_nuxt/img/mobile-light.c95e71f.svg);
+    --gradient-tabs: linear-gradient(-90deg,#fff,#fff 30%,hsla(0,0%,100%,0));
+    --gradient-filters: linear-gradient(-90deg,#f6f6f6,#f6f6f6 30%,hsla(0,0%,96%,0));
+    --effect-line: 3px solid rgba(17,51,85,.4);
+    --podcast-bg: rgba(0,0,0,.5)
+}
+
+.dark-mode {
+    --color-accent: #0fb;
+    --rgb-accent: 0,255,187;
+    --color-accent-light: #087;
+    --color-accent-dark: #085;
+    --color-accent-inv: #096;
+    --color-secondary: #8df;
+    --color-secondary-inv: #135;
+    --color-scrollbar: rgba(136,221,255,.6);
+    --color-yellow: #b90;
+    --color-red: #ebb;
+    --color-outward: #2df;
+    --color-text: #f1f1f1;
+    --color-text-long: #e9e9e9;
+    --color-bg-inv: #f1f1f1;
+    --color-bg: #222;
+    --color-bg-fade: linear-gradient(0deg,#222,rgba(34,34,34,.5) 60%,rgba(34,34,34,0));
+    --color-bg-long: #222;
+    --color-gray-extra-dark: #aaa;
+    --color-gray-dark: #999;
+    --color-gray-medium: #777;
+    --color-gray-medium-inv: #999;
+    --color-gray-mid-light: #555;
+    --color-gray-mid-light-inv: #ddd;
+    --color-gray-mid-light-fx: #000222;
+    --color-gray-light: #333;
+    --color-gray-light-fade: linear-gradient(0deg,#333,rgba(51,51,51,.5) 60%,rgba(51,51,51,0));
+    --color-gray-light-fx: #222933;
+    --color-gray-extra-light: #111;
+    --color-general: #111;
+    --color-nav: #0a0a0a;
+    --color-nav-light: #555;
+    --color-nav-mid-light: #777;
+    --color-cards: #333;
+    --color-list: #404040;
+    --color-viral: #eaa;
+    --color-viral-inv: #f44;
+    --color-viral-light: #262338;
+    --color-after: #aaf;
+    --color-g7: #fff;
+    --color-light: #aaa;
+    --color-hold: #fff;
+    --color-hold-accent: #f49;
+    --color-eszkombajn-blue: #06e;
+    --color-eszkombajn-red: #e01;
+    --logo-after: url(/_nuxt/img/after-dark.0522596.svg);
+    --logo-direkt: url(/_nuxt/img/direkt-dark.2677cb5.svg);
+    --logo-eszkombajn: url(/_nuxt/img/eszkombajn-dark.2a8797d.svg);
+    --logo-g7: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgNTAiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLW1pdGVybGltaXQ9IjIiPjxwYXRoIGQ9Ik0wIDBoMTAwdjUwSDB6IiBmaWxsPSIjZmZmIi8+PHBhdGggZD0iTTEwMCAwdjUwSDUwVjBoNTB6TTY3Ljk0MiA0MS44MjdoOS41NjNsMTAuOTU4LTI1LjE0VjguMTczSDYxLjUzOXY4LjQzOGgxNy45MzVMNjcuOTQyIDQxLjgyN3ptLTQyLjI5NSA1LjI4OUMxMi4yNDIgNDcuMTE2IDMuMzY1IDM2LjkxNCAzLjM2NSAyNWMwLTEyLjI2NyA5LjIyOS0yMi4xMTYgMjEuOTI5LTIyLjExNiA4LjkzNiAwIDE1Ljg3MyA0LjU0MSAxOS41MTcgMTEuMDI5bC03LjE3MyA0LjM2M2MtMi42NDQtNC44OTQtNi43MDEtNy40My0xMi4yODYtNy40My03LjgxOSAwLTEzLjg3NSA2LjQyOC0xMy44NzUgMTQuMTU0IDAgNy45MDMgNS45MzggMTQuMTU0IDE0LjE2OCAxNC4xNTQgNi4yMzIgMCAxMC42NDEtMy41MzggMTIuMTY5LTkuMDI0SDI0LjM1MnYtNy44NDJoMjIuMjgzdjMuMzAzYzAgMTEuNTU4LTguMjMxIDIxLjUyNS0yMC45ODkgMjEuNTI1eiIgZmlsbD0iIzFkMWQxZCIvPjwvc3ZnPg==);
+    --logo-komplex: url(/_nuxt/img/komplex-dark.ddb791e.svg);
+    --logo-szepkilatas: url(/_nuxt/img/szepkilatas-dark.d00e693.svg);
+    --logo-valasztasi-foldrajz: url(/_nuxt/img/valasztasi-foldrajz-dark.90106fa.svg);
+    --logo-viral: url(/_nuxt/img/zacc-dark.224e2dc.svg);
+    --logo-viral-inv: url(/_nuxt/img/zacc-light.69c55cb.svg);
+    --gfx-empty: url(/_nuxt/img/search_empty-dark.09db9ce.svg);
+    --gfx-apps: url(/_nuxt/img/mobile-dark.014ccdb.svg);
+    --gradient-tabs: linear-gradient(-90deg,#222,#222 30%,rgba(34,34,34,0));
+    --gradient-filters: linear-gradient(-90deg,#404040,#404040 30%,rgba(64,64,64,0));
+    --effect-line: 3px solid rgba(136,221,255,.4);
+    --podcast-bg: hsla(0,0%,100%,.5)
+}
+
+body {
+    --youth-a: #9dd;
+    --youth-b: #df6;
+    --youth-c: #c0b6fa;
+    --youth-d: #713;
+    --youth-e: #162c46;
+    --youth-f: #223
+}
+
+.youth__theme--a {
+    --youth-bg: var(--youth-a);
+    --youth-txt: var(--secondary);
+    --youth-accent: #ff1493;
+    --youth-card: rgba(17,51,85,.2);
+    --youth-card-hover: rgba(17,51,85,.6);
+    --youth-separator: rgba(17,51,85,.2)
+}
+
+.youth__theme--b {
+    --youth-bg: var(--youth-b);
+    --youth-txt: #257;
+    --youth-accent: #39f;
+    --youth-card: rgba(17,51,85,.2);
+    --youth-card-hover: rgba(17,51,85,.6);
+    --youth-separator: rgba(17,51,85,.2)
+}
+
+.youth__theme--c {
+    --youth-bg: var(--youth-c);
+    --youth-txt: #516;
+    --youth-accent: crimson;
+    --youth-card: rgba(17,51,85,.2);
+    --youth-card-hover: rgba(17,51,85,.6);
+    --youth-separator: rgba(17,51,85,.2)
+}
+
+.youth__theme--d {
+    --youth-bg: var(--youth-d);
+    --youth-txt: var(--white);
+    --youth-accent: #fc0;
+    --youth-card: hsla(0,0%,100%,.2);
+    --youth-card-hover: hsla(0,0%,100%,.6);
+    --youth-separator: hsla(0,0%,100%,.2)
+}
+
+.youth__theme--e {
+    --youth-bg: var(--youth-e);
+    --youth-txt: var(--white);
+    --youth-accent: #f0f;
+    --youth-card: hsla(0,0%,100%,.2);
+    --youth-card-hover: hsla(0,0%,100%,.6);
+    --youth-separator: hsla(0,0%,100%,.2)
+}
+
+.youth__theme--f {
+    --youth-bg: var(--youth-f);
+    --youth-txt: var(--white);
+    --youth-accent: #3f4;
+    --youth-card: hsla(0,0%,100%,.2);
+    --youth-card-hover: hsla(0,0%,100%,.6);
+    --youth-separator: hsla(0,0%,100%,.2)
+}
+
+.main--tt .layout1 .group2 .flyer-container {
+    margin-top: 20px
+}
+
+.main--tt .block__group .leaderboard--top {
+    padding: 25px 0 0
+}
+
+@media screen and (min-width: 768px) {
+    .main--tt .block__group .leaderboard--middle {
+        padding:30px 0
+    }
+}
+
+.main--tt .footer__logo {
+    width: 120px
+}
+
+@media screen and (min-width: 500px) {
+    .main--tt .footer__logo {
+        width:150px
+    }
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    font-family: Inter, Helvetica, Arial, sans-serif;
+}
+
+.header .top-part {
+    font-family: Inter, Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #024;
+    padding: 6px 50px 7px;
+}
+
+.header .top-part .left-part .date__wrapper {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16px;
+    color: #fff;
+}
+
+.header .top-part .left-part .date__wrapper b {
+    font-weight: 400;
+}
+
+.header .top-part .middle-part .navigation ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.header .top-part .middle-part .navigation ul li a {
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 14px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.header .top-part .right-part .widgets {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header .top-part .right-part .widgets .widget--rate {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16px;
+    color: #8df;
+    text-transform: uppercase;
+}
+
+.header .top-part .right-part .widgets .widget--weather {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header .top-part .right-part .widgets .widget--weather img {
+    width: 18px;
+    height: 17px;
+}
+
+.header .top-part .right-part .widgets .widget--weather .widget--weather__degree {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16px;
+    color: #8df;
+    text-transform: uppercase;
+}
+
+.header .bottom-part {
+    padding: 20px 50px;
+    background-color: #113355;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .bottom-part .left-part .menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.header .bottom-part .left-part .menu .menu-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header .bottom-part .left-part .menu .menu-left span {
+    color: #fff;
+}
+
+.header .bottom-part .left-part .menu .menu-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header .bottom-part .left-part .menu .menu-right span {
+    color: #fff;
+}
+
+.header .bottom-part .middle-part .logo {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 34px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.header .bottom-part .right-part {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header .bottom-part .right-part .login {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.header .bottom-part .right-part .login span {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #fff;
+}
+
+.header .bottom-part .right-part .t11 {
+    width: 110px;
+    height: 38px;
+    border-radius: 5px;
+    background-color: #fe0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #111;
+}
+
+@media screen and (max-width: 960px) {
+    .header .top-part {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .header .bottom-part {
+        padding: 10px 30px;
+    }
+    .header .bottom-part .middle-part .logo {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .header .bottom-part .right-part .login {
+        display: none;
+    }
+    .header .bottom-part .left-part .menu .menu-right {
+        display: none;
+    }
+    .header .bottom-part .right-part .t11 {
+        display: none;
+    }
+}
