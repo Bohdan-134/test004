@@ -955,11 +955,12 @@ body {
 
 .header .bottom-part .middle-part .logo {
     margin: 0;
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 34px;
-    color: #fff;
-    text-transform: uppercase;
+    font-size: 0px;
+}
+
+.header .bottom-part .middle-part .logo svg {
+    width: 101px;
+    height: 33px;
 }
 
 .header .bottom-part .right-part {
